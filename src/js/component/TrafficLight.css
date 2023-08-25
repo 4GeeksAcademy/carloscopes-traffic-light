@@ -1,0 +1,72 @@
+body {
+    box-sizing: border-box;
+    background-color: #a5ddee;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wire {
+    background-color: #0A122A;
+    width: 40px;
+    height: 140px;
+    border-bottom: 5px solid #444853;
+}
+.container > .lightBox {
+    width: 150px;
+    height: 150px;
+    background-color: #0A122A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #444853;
+}
+
+.container > :nth-child(2) {
+    border-radius: 15px 15px 0 0;
+}
+
+.container > :nth-child(4) {
+    border-radius: 0 0 15px 15px;
+}
+
+.lightBox > div {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.redLight {
+    background-color: #F71735;
+}
+
+.yellowLight {
+    background-color: #FAF061;
+}
+
+.greenLight {
+    background-color: #00CB95 ;
+}
+
+.redOn {
+    background-color: #F71735;
+    box-shadow: -1px 3px 15px 11px rgba(247,23,53,0.75);
+-webkit-box-shadow: -1px 3px 15px 11px rgba(247,23,53,0.75);
+-moz-box-shadow: -1px 3px 15px 11px rgba(247,23,53,0.75);
+}
+
+.yellowOn {
+    background-color: #FAF061;
+    box-shadow: -1px 3px 15px 11px rgba(250,240,97,0.75);
+-webkit-box-shadow: -1px 3px 15px 11px rgba(250,240,97,0.75);
+-moz-box-shadow: -1px 3px 15px 11px rgba(250,240,97,0.75);
+}
+
+.greenOn {
+    background-color: #00CB95 ;
+    box-shadow: -1px 3px 15px 11px rgba(0,203,149,0.75);
+-webkit-box-shadow: -1px 3px 15px 11px rgba(0,203,149,0.75);
+-moz-box-shadow: -1px 3px 15px 11px rgba(0,203,149,0.75);
+}
